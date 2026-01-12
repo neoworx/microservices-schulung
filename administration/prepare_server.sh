@@ -18,6 +18,8 @@ user=root
 
 echo "Prepare server $ip"
 
+ssh-keygen -f "~/.ssh/known_hosts" -R "$ip" | echo "No need to reconfigure $ip in known_hosts"
+
 echo "Prepare authorized_keys file"
 ssh -o StrictHostKeyChecking=no -i $ssh_key  $user@$ip "cat /root/.ssh/authorized_keys" > ./authorized_keys
 echo "" >> ./authorized_keys
