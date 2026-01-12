@@ -2,7 +2,7 @@ FROM eclipse-temurin:latest
 
 WORKDIR app
 
-COPY target/demo.jar app.jar
+COPY build/libs/fahrzeuge-0.0.1.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
