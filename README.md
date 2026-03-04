@@ -6,4 +6,10 @@ a working environment for the participants of the Microservices training.
 
 # Links
 
+### H2
+
 https://www.baeldung.com/spring-boot-h2-database
+
+### RabbitMQ
+
+https://www.baeldung.com/spring-amqp
